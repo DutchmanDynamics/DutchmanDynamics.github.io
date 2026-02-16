@@ -12,6 +12,6 @@ const IndexPage = () => (
   </main>
 );
 
-export const Head = () => <title>Testing</title>;
+export const Head = () => <title>Our Team</title>;
 
 export default IndexPage;
