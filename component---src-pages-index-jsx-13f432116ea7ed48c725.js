@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcansat_website=self.webpackChunkcansat_website||[]).push([[279],{7325:function(e,t,n){n.r(t),n.d(t,{Head:function(){return u}});var a=n(6540),l=n(4087);const u=()=>a.createElement("title",null,"CanSat Kajmunk 25/26");t.default=()=>a.createElement("main",null,a.createElement(l.A,null))}}]);
+//# sourceMappingURL=component---src-pages-index-jsx-13f432116ea7ed48c725.js.map

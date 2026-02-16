@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcansat_website=self.webpackChunkcansat_website||[]).push([[415],{3729:function(e,t,n){n.r(t),n.d(t,{Head:function(){return l}});var a=n(6540);const l=()=>a.createElement("title",null,"CanSat 404");t.default=()=>a.createElement("div",null,a.createElement("h1",null,"404: Not Found"),a.createElement("p",null,"You just hit a route that doesn't exist... the sadness."))}}]);
+//# sourceMappingURL=component---src-pages-404-jsx-2593bb5ae21217f74426.js.map
