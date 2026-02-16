@@ -1,1 +1,1 @@
-# CanSatKajmunk.github.io
+# DuthcmanDynamics.github.io
