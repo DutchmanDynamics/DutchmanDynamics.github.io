@@ -28,10 +28,15 @@ const Satellites = [
   {
     name: 'GeigerSat',
     description: 'Putting a radiation sensor inside the CanSat',
-    href: '#',
+    href: '/geigersat', // just a string
     icon: ChartPieIcon,
   },
-  { name: 'DroneSat', description: 'Turning the CanSat into a drone', href: '#', icon: CursorArrowRaysIcon },
+  {
+    name: 'DroneSat',
+    description: 'Turning the CanSat into a drone',
+    href: '/dronesat',
+    icon: CursorArrowRaysIcon,
+  },
 ];
 
 export default function Header() {
@@ -101,9 +106,9 @@ export default function Header() {
           <Link to="/our_team" className="text-sm/6 font-semibold text-gray-900">
             Our Team
           </Link>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <Link to="/sponsoring" className="text-sm/6 font-semibold text-gray-900">
             Sponsoring
-          </a>
+          </Link>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
       </nav>
