@@ -11,7 +11,8 @@ const cards = [
   },
   {
     name: 'Secondary Mission',
-    description: 'Quod possimus sit modi rerum exercitationem quaerat atque tenetur ullam.',
+    description:
+      'The Secondary Mission is open for your own ideas, as long as it is helping society, our two teams brainstormed a lot and landed on two ideas, one team is making a satellite that turns into a drone while descending, and the other team is putting a geigercounter inside there CanSat',
     icon: LifebuoyIcon,
   },
 ];
