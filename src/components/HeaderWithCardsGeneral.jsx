@@ -4,18 +4,19 @@ import { LifebuoyIcon, NewspaperIcon, PhoneIcon } from '@heroicons/react/20/soli
 
 const cards = [
   {
-    name: 'Primar',
-    description: 'Consectetur vel non. Rerum ut consequatur nobis unde. Enim est quo corrupti consequatur.',
+    name: 'Primary Mission',
+    description:
+      'The Primary Mission consits of measuring two things: The air pressure and the temperature, these will be sent back with the CanSat every second during its descent, this mission is the same for every team and is mandatory ',
     icon: PhoneIcon,
   },
   {
-    name: 'Technical Support',
+    name: 'Secondary Mission',
     description: 'Quod possimus sit modi rerum exercitationem quaerat atque tenetur ullam.',
     icon: LifebuoyIcon,
   },
 ];
 
-export default function HeaderWithCardsGeiger() {
+export default function HeaderWithCardsGeneral() {
   return (
     <div className="relative isolate overflow-hidden bg-white py-24 sm:py-32 dark:bg-gray-900">
       <img
@@ -49,11 +50,11 @@ export default function HeaderWithCardsGeiger() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl dark:text-white">
-            Support center
+            What are our missions?
           </h2>
           <p className="mt-8 text-lg font-medium text-pretty text-gray-600 sm:text-xl/8 dark:text-gray-400">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-            fugiat veniam occaecat fugiat.
+            Because our team consits of seven people we decided to make to teams. Here you will read about the mission
+            in general.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">

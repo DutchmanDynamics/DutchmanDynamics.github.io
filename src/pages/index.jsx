@@ -2,12 +2,13 @@ import * as React from 'react';
 import Header from '../components/Header';
 import TitleCard from '../components/TitleCard';
 import Button from '../components/Button';
+import HeaderWithCardsGeneral from '../components/HeaderWithCardsGeneral';
 
 const IndexPage = () => (
   <main>
     <Header />
     <TitleCard />
-    <Button />
+    <HeaderWithCardsGeneral />
   </main>
 );
 
