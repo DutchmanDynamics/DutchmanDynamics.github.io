@@ -6,10 +6,11 @@ import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
-  { name: 'Satellites', href: '#' },
-  { name: 'Testing', href: '#' },
-  { name: 'Our Team', href: '#' },
-  { name: 'Sponsoring', href: '#' },
+  { name: 'GeigerSat', href: '/geigersat' },
+  { name: 'DroneSat', href: '/dronesat' },
+  { name: 'Testing', href: 'testing' },
+  { name: 'Our Teams', href: '/our_team' },
+  { name: 'Sponsoring', href: '/sponsoring' },
 ];
 
 export default function HeroSection() {

@@ -56,7 +56,7 @@ export default function TeamDrone() {
                 src={person.imageUrl}
                 className="mx-auto size-48 rounded-full outline-1 -outline-offset-1 outline-white/10 md:size-56"
               />
-              <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">{person.name}</h3>
+              <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-white">{person.name}</h3>
               <p className="text-sm/6 text-gray-400">{person.role}</p>
               <ul role="list" className="mt-6 flex justify-center gap-x-6"></ul>
             </li>

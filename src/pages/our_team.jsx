@@ -1,18 +1,19 @@
 import * as React from 'react';
-import Header from '../components/Header';
+
 import TeamGeiger from '../components/TeamGeiger';
 import TeamDrone from '../components/TeamDrone';
 import Experts from '../components/Experts';
+import HeaderHero from '../components/HeaderHero';
 
 const IndexPage = () => (
   <main>
-    <Header />
+    <HeaderHero />
     <TeamGeiger />
     <TeamDrone />
     <Experts />
   </main>
 );
 
-export const Head = () => <title>Our Team</title>;
+export const Head = () => <title>Our Teams</title>;
 
 export default IndexPage;

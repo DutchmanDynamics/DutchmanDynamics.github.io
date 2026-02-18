@@ -33,7 +33,7 @@ export default function TeamGeiger() {
       <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">RadioActiveAir</h2>
-          <p className="mt-6 text-lg/8 text-gray-600">Three students from Kaj Munk College in Hoofddorp</p>
+          <p className="mt-6 text-lg/8 text-gray-400">Three students from Kaj Munk College in Hoofddorp</p>
         </div>
         <ul
           role="list"
@@ -46,7 +46,7 @@ export default function TeamGeiger() {
                 src={person.imageUrl}
                 className="mx-auto size-48 rounded-full outline-1 -outline-offset-1 outline-black/5 md:size-56"
               />
-              <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">{person.name}</h3>
+              <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-white">{person.name}</h3>
               <p className="text-sm/6 text-gray-400">{person.role}</p>
               <ul role="list" className="mt-6 flex justify-center gap-x-6"></ul>
             </li>
