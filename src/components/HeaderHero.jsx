@@ -21,7 +21,7 @@ export default function Header() {
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           {/* Logo */}
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">CanSat</span>
               <StaticImage
                 placeholder="none"
@@ -30,7 +30,7 @@ export default function Header() {
                 alt="CanSat Logo"
                 height={100}
               />
-            </a>
+            </Link>
           </div>
 
           {/* Mobile menu button */}

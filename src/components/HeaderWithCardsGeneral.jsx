@@ -5,7 +5,7 @@ const cards = [
   {
     name: 'Primary Mission',
     description:
-      'The Primary Mission consits of measuring two things: The air pressure and the temperature, these will be sent back with the CanSat every second during its descent, this mission is the same for every team and is mandatory ',
+      'The Primary Mission consits of measuring two things: The air pressure and the temperature, these will be sent back with the CanSat every second during its descent.',
     icon: PhoneIcon,
   },
   {
@@ -42,7 +42,7 @@ export default function HeaderWithCardsGeneral() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">What are our missions?</h2>
           <p className="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
-            Because our team consits of seven people we decided to make to teams. Here you will read about the mission
+            Because our team consits of seven people we decided to make two teams. Here you will read about the missions
             in general.
           </p>
         </div>

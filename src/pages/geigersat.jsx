@@ -1,9 +1,11 @@
 import * as React from 'react';
-import Header from '../components/Header';
+import HeaderHero from '../components/HeaderHero';
+import BentoGeigerTop from '../components/BentoGeigerTop';
 
 const IndexPage = () => (
   <main>
-    <Header />
+    <HeaderHero />
+    <BentoGeigerTop />
   </main>
 );
 
