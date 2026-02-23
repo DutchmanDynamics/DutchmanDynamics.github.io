@@ -78,7 +78,7 @@ export default function Example() {
                 </dt>
                 <dd>
                   <a href="mailto:hello@example.com" className="hover:text-white">
-                    DutchmanDynamics.kajmunk@gmail.com
+                    DutchmanDynamics.kajmunk@gmail.com Radioactiveair.kajmunk@gmail.com
                   </a>
                 </dd>
               </div>

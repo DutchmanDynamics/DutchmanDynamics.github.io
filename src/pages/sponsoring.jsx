@@ -1,14 +1,13 @@
 import * as React from 'react';
+
 import HeaderHero from '../components/HeaderHero';
-import BentoDroneTop from '../components/BentoDroneTop';
 
 const IndexPage = () => (
   <main>
     <HeaderHero />
-    <BentoDroneTop />
   </main>
 );
 
-export const Head = () => <title>Geiger Sat</title>;
+export const Head = () => <title>Sponsoring</title>;
 
 export default IndexPage;

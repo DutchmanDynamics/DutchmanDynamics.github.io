@@ -9,7 +9,7 @@ const navigation = [
   { name: 'DroneSat', href: '/dronesat' },
   { name: 'Testing', href: 'testing' },
   { name: 'Our Teams', href: '/our_team' },
-  { name: 'Sponsoring', href: '/sponsoring' },
+  { name: 'Contact', href: '/contact' },
 ];
 
 export default function Header() {
