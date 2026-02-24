@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Header from '../components/Header';
 import HeaderWithCardsGeneral from '../components/HeaderWithCardsGeneral';
 import HeroSection from '../components/HeroSection';
 import Stats from '../components/Stats';
