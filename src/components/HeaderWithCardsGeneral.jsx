@@ -1,18 +1,19 @@
 import React from 'react';
-import { LifebuoyIcon, NewspaperIcon, PhoneIcon } from '@heroicons/react/20/solid';
+import { ChartBarIcon, RocketLaunchIcon } from '@heroicons/react/20/solid';
 import { StaticImage } from 'gatsby-plugin-image';
+
 const cards = [
   {
     name: 'Primary Mission',
     description:
-      'The Primary Mission consits of measuring two things: The air pressure and the temperature, these will be sent back with the CanSat every second during its descent.',
-    icon: PhoneIcon,
+      'The Primary Mission consists of measuring two things: The air pressure and the temperature, these will be sent back with the CanSat every second during its descent.',
+    icon: ChartBarIcon,
   },
   {
     name: 'Secondary Mission',
     description:
-      'The Secondary Mission is open for your own ideas, as long as it is helping society, our two teams brainstormed a lot and landed on two ideas, one team is making a satellite that turns into a drone while descending, and the other team is putting a geigercounter inside there CanSat',
-    icon: LifebuoyIcon,
+      'The Secondary Mission is open for your own ideas, as long as it is helping society. Our two teams brainstormed a lot and landed on two ideas: one team is making a satellite that turns into a drone while descending, and the other team is putting a Geiger counter inside their CanSat.',
+    icon: RocketLaunchIcon,
   },
 ];
 
@@ -42,8 +43,8 @@ export default function HeaderWithCardsGeneral() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">What are our missions?</h2>
           <p className="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
-            Because our team consits of seven people we decided to make two teams. Here you will read about the missions
-            in general.
+            Because our team consists of seven people we decided to make two teams. Here you will read about the
+            missions in general.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
@@ -52,7 +53,7 @@ export default function HeaderWithCardsGeneral() {
               key={card.name}
               className="flex gap-x-4 rounded-xl bg-white/5 p-6 inset-ring inset-ring-white/5 backdrop-blur-sm"
             >
-              <card.icon aria-hidden="true" className="h-7 w-5 flex-none text-indigo-400" />
+              <card.icon aria-hidden="true" className="h-7 w-7 flex-none text-indigo-400" />
               <div className="text-base/7">
                 <h3 className="font-semibold text-white">{card.name}</h3>
                 <p className="mt-2 text-gray-300">{card.description}</p>

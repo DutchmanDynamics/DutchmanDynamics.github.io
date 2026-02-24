@@ -4,6 +4,7 @@ import TeamGeiger from '../components/TeamGeiger';
 import TeamDrone from '../components/TeamDrone';
 import Experts from '../components/Experts';
 import HeaderHero from '../components/HeaderHero';
+import Footer from '../components/Footer';
 
 const IndexPage = () => (
   <main>
@@ -11,6 +12,8 @@ const IndexPage = () => (
     <TeamGeiger />
     <TeamDrone />
     <Experts />
+
+    <Footer />
   </main>
 );
 

@@ -67,7 +67,7 @@ export default function Example() {
                 </dt>
                 <dd>
                   <a href="tel:+1 (555) 234-5678" className="hover:text-white">
-                    +31 6 40664621
+                    *...........*
                   </a>
                 </dd>
               </div>
