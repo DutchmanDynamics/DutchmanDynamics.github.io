@@ -5,10 +5,12 @@ import Stats from '../components/Stats';
 import Footer from '../components/Footer';
 import SponsorsIndex from '../components/SponsorsIndex';
 import Donate from '../components/Donate';
+import ProgressBar from '../components/ProgressBar';
 
 const IndexPage = () => (
-  <main>
+  <main className="bg-gray-900">
     <HeroSection />
+    <ProgressBar />
     <HeaderWithCardsGeneral />
     <Stats />
     <SponsorsIndex />

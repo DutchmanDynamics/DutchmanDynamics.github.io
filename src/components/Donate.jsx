@@ -16,7 +16,7 @@ export default function SupportSection() {
           {/* QR Code */}
           <div className="flex flex-col items-center">
             <StaticImage
-              src="../images/frame(1).png" // <-- your QR code
+              src="../images/frame(1).png"
               alt="Donate QR Code"
               className="h-48 w-48 object-cover"
               placeholder="none"

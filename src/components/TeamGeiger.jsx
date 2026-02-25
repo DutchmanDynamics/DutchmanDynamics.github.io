@@ -29,16 +29,13 @@ const people = [
 
 export default function TeamGeiger() {
   return (
-    <div className="bg-gray-900 py-24 sm:py-32">
+    <div className="bg-gray-900 py-16 pt-40">
       <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">RadioActiveAir</h2>
           <p className="mt-6 text-lg/8 text-gray-400">Three students from Kaj Munk College in Hoofddorp</p>
         </div>
-        <ul
-          role="list"
-          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
-        >
+        <ul className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
           {people.map((person) => (
             <li key={person.name} className="rounded-2xl bg-gray-800 px-8 py-10">
               <img
@@ -48,7 +45,7 @@ export default function TeamGeiger() {
               />
               <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-white">{person.name}</h3>
               <p className="text-sm/6 text-gray-400">{person.role}</p>
-              <ul role="list" className="mt-6 flex justify-center gap-x-6"></ul>
+              <ul className="mt-6 flex justify-center gap-x-6"></ul>
             </li>
           ))}
         </ul>

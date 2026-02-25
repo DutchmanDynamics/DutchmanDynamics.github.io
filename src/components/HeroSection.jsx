@@ -5,6 +5,7 @@ import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
+  { name: 'Home', to: '/' },
   { name: 'GeigerSat', to: '/geigersat' },
   { name: 'DroneSat', to: '/dronesat' },
   { name: 'Our Teams', to: '/our_team' },
@@ -137,9 +138,14 @@ export default function HeroSection() {
               problem-solving, and mission planning.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Link to="/dronesat" className="text-sm/6 font-semibold text-white">
-                Learn more <span aria-hidden="true">→</span>
-              </Link>
+              <a
+                href="https://kajmunk.nl/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-white"
+              >
+                Read more about our school <span aria-hidden="true">→</span>
+              </a>
             </div>
           </div>
         </div>

@@ -1,12 +1,13 @@
 import React from 'react';
+import { Email } from 'react-obfuscate-email';
 import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 
-export default function Example() {
+export default function Contact() {
   return (
     <div className="relative isolate bg-gray-900">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
-        <div className="relative px-6 pt-24 pb-20 sm:pt-32 lg:static lg:px-8 lg:py-48">
-          <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+        <div className="relative px-6 pt-24 pb-20 sm:pt-32 lg:static lg:px-8 py-40">
+          <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg py-20 md:py-0">
             <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-900 ring-1 ring-white/10 lg:w-1/2">
               <svg
                 aria-hidden="true"
@@ -77,9 +78,13 @@ export default function Example() {
                   <EnvelopeIcon aria-hidden="true" className="h-7 w-6 text-gray-400" />
                 </dt>
                 <dd>
-                  <a href="mailto:hello@example.com" className="hover:text-white">
-                    DutchmanDynamics.kajmunk@gmail.com Radioactiveair.kajmunk@gmail.com
-                  </a>
+                  <Email email="Radioactiveair.kajmunk@gmail.com" className="hover:text-white">
+                    Contact RadioActiveAir team
+                  </Email>
+                  <br />
+                  <Email email="DutchmanDynamics.kajmunk@gmail.com" className="hover:text-white">
+                    Contact DutchmanDynamics
+                  </Email>
                 </dd>
               </div>
             </dl>
@@ -160,12 +165,18 @@ export default function Example() {
               </div>
             </div>
             <div className="mt-8 flex justify-end">
-              <button
-                type="submit"
-                className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+              <Email
+                email="DutchmanDynamics.kajmunk@gmail.com"
+                className="mx-8 rounded-md bg-indigo-700 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
-                Send message
-              </button>
+                Contact DutchmanDynamics
+              </Email>
+              <Email
+                email="Radioactiveair.kajmunk@gmail.com"
+                className="rounded-md bg-indigo-700 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+              >
+                Contact RadioActiveAir
+              </Email>
             </div>
           </div>
         </form>

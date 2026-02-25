@@ -9,7 +9,6 @@ const IndexPage = () => (
     <HeaderHero />
     <BentoGeigerTop />
     <TechSpecsGeiger />
-
     <Footer />
   </main>
 );
