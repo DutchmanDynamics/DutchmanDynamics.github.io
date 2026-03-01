@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserAstronaut } from '@fortawesome/free-solid-svg-icons';
 
 const navigation = [
   { name: 'Home', to: '/' },
@@ -22,7 +24,7 @@ export default function HeroSection() {
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">CanSat Kajmunk</span>
               <StaticImage
                 placeholder="none"
                 layout="fixed"
@@ -114,6 +116,11 @@ export default function HeroSection() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
+              <FontAwesomeIcon
+                aria-hidden="true"
+                className="h-32 w-32 pt-1 flex-none text-white text-base"
+                icon={faUserAstronaut}
+              />
               CanSat Competition 25/26.{' '}
               <a
                 href="https://esero.nl/project/cansat-competitie/"
