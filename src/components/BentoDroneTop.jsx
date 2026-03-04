@@ -7,7 +7,7 @@ export default function BentoGeiger() {
     <div className="bg-gray-900 py-16 pt-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
-        <h2 className="text-4xl font-semibold text-indigo-400">Team Geiger</h2>
+        <h2 className="text-4xl font-semibold text-indigo-400">Team Drone</h2>
 
         <p className="mt-2 max-w-2xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
           Building a satellite to measure radiation.
