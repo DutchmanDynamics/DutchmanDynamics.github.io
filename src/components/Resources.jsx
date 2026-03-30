@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
-export default function Sponsors() {
+export default function Resources() {
   return (
     <div className="w-full" style={{ backgroundColor: '#101828' }}>
       <div className="bg-gray-900 py-16 pt-40">

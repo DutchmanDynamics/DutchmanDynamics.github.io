@@ -3,8 +3,7 @@ import HeaderWithCardsGeneral from '../components/HeaderWithCardsGeneral';
 import HeroSection from '../components/HeroSection';
 import Stats from '../components/Stats';
 import Footer from '../components/Footer';
-import SponsorsIndex from '../components/SponsorsIndex';
-import Donate from '../components/Donate';
+import SponsorIndex from '../components/SponsorsIndex';
 import ProgressBar from '../components/ProgressBar';
 
 const IndexPage = () => (
@@ -13,8 +12,7 @@ const IndexPage = () => (
     <ProgressBar />
     <HeaderWithCardsGeneral />
     <Stats />
-    <SponsorsIndex />
-    <Donate />
+    <SponsorIndex />
     <Footer />
   </main>
 );

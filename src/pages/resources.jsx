@@ -1,16 +1,16 @@
 import * as React from 'react';
 import HeaderHero from '../components/HeaderHero';
 import Footer from '../components/Footer';
-import Sponsors from '../components/Sponsors';
+import Resources from '../components/Resources';
 
 const IndexPage = () => (
   <main>
     <HeaderHero />
-    <Sponsors />
+    <Resources />
     <Footer />
   </main>
 );
 
-export const Head = () => <title>Sponsoring</title>;
+export const Head = () => <title>Resources</title>;
 
 export default IndexPage;

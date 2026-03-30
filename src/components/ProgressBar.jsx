@@ -1,28 +1,42 @@
 import React from 'react';
 
 const product = {
-  step: 2, //Change this to 3 if launched
+  step: 2,
 };
+
+const steps = ['Proposal', 'Progress Report', 'Final Report', 'Final Paper', 'Space Expo'];
 
 export default function ProgressBar() {
   return (
-    <div className=" px-4 py-6 sm:px-6 lg:p-8 bg-transparent">
-      <h4 className="sr-only">Status</h4>
-      <p className="text-sm font-medium text-gray-900">
-        {product.status} Project Milestones<time dateTime={product.datetime}>{product.date}</time>
-      </p>
-      <div aria-hidden="true" className="mt-6">
-        <div className="overflow-hidden rounded-full bg-gray-200">
+    <div className="w-full py-8 bg-transparent">
+      {/* Title */}
+      <p className="text-lg sm:text-xl font-semibold text-white text-center">Project Milestones</p>
+
+      {/* Progress bar */}
+      <div className="mt-8 px-4 sm:px-6">
+        <div className="overflow-hidden rounded-full bg-gray-700 h-3 w-full">
           <div
-            style={{ width: `calc((${product.step} * 2 + 1) / 8 * 100%)` }}
-            className="h-2 rounded-full bg-indigo-600"
+            style={{
+              width: `${(product.step / (steps.length - 1)) * 100}%`,
+            }}
+            className="h-3 rounded-full bg-indigo-500 transition-all duration-500"
           />
         </div>
-        <div className="mt-6 hidden grid-cols-4 text-sm font-medium text-white sm:grid">
-          <div className="text-indigo-400">Proposal</div>
-          <div className={product.step > 0 ? 'text-indigo-400 text-center' : 'text-center'}>Progress Report</div>
-          <div className={product.step > 1 ? 'text-indigo-400 text-center' : 'text-center'}>Final Report</div>
-          <div className={product.step > 2 ? 'text-indigo-400 text-right' : 'text-right'}>Launch</div>
+      </div>
+
+      {/* Steps (scrollable on mobile) */}
+      <div className="mt-6 overflow-x-auto px-2">
+        <div className="flex min-w-max justify-between gap-6 sm:grid sm:grid-cols-5 sm:gap-0">
+          {steps.map((stepName, index) => (
+            <div
+              key={index}
+              className={`text-center text-sm font-medium whitespace-nowrap ${
+                index <= product.step ? 'text-indigo-400' : 'text-gray-500'
+              }`}
+            >
+              {stepName}
+            </div>
+          ))}
         </div>
       </div>
     </div>

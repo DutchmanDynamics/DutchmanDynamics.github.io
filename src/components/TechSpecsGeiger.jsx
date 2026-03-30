@@ -41,7 +41,7 @@ const posts = [
   {
     id: 4,
     title: 'RECOVERY',
-    description: ['GPS tracking system', 'Parachute slows the fall to 15 m/s', 'SD card stores all the measurements'],
+    description: ['GPS tracking system', 'Parachute slows the fall to 15 m/s'],
     imageUrl:
       'https://images.unsplash.com/photo-1585401757873-e5edaf94e9b2?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },

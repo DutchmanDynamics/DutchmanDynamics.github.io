@@ -1,11 +1,23 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAtom, faRadiation } from '@fortawesome/free-solid-svg-icons';
+import { faAtom, faRadiation, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 export default function BentoGeiger() {
   return (
     <div className="bg-gray-900 py-16 pt-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        {/* ✅ Mission Success Banner */}
+        <div className="mb-12 flex items-center gap-4 rounded-xl bg-green-500/10 p-6 ring-1 ring-green-500/20 backdrop-blur-sm">
+          <FontAwesomeIcon icon={faCheckCircle} className="h-10 w-10 text-green-400" />
+          <div>
+            <h3 className="text-xl font-semibold text-green-400">Mission Accomplished</h3>
+            <p className="text-gray-300 mt-1">
+              The Geiger CanSat mission was completed successfully. All systems functioned as expected and valuable
+              radiation data was collected during descent.
+            </p>
+          </div>
+        </div>
+
         {/* Header */}
         <h2 className="text-4xl font-semibold text-indigo-400">Team Geiger</h2>
 
@@ -16,13 +28,8 @@ export default function BentoGeiger() {
         {/* Grid */}
         <div className="text-indigo-400 mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2">
           {/* Primary Mission */}
-
           <div className="flex gap-x-4 rounded-xl bg-white/5 p-6 inset-ring inset-ring-white/5 backdrop-blur-sm">
-            <FontAwesomeIcon
-              aria-hidden="true"
-              className="h-32 w-32 pt-1 flex-none text-indigo-400 text-2xl"
-              icon={faAtom}
-            />
+            <FontAwesomeIcon aria-hidden="true" className="h-32 w-32 pt-1 flex-none text-indigo-400" icon={faAtom} />
             <div className="text-base/7">
               <p className="text-2xl font-semibold text-white">Primary Mission</p>
 
@@ -41,7 +48,7 @@ export default function BentoGeiger() {
           <div className="flex gap-x-4 rounded-xl bg-white/5 p-6 inset-ring inset-ring-white/5 backdrop-blur-sm">
             <FontAwesomeIcon
               aria-hidden="true"
-              className="h-32 w-32 pt-1 flex-none text-indigo-400 text-2xl"
+              className="h-32 w-32 pt-1 flex-none text-indigo-400"
               icon={faRadiation}
             />
             <div className="text-base/7">
@@ -52,7 +59,7 @@ export default function BentoGeiger() {
               <p className="mt-4 text-gray-400 leading-relaxed">
                 For the Secondary Mission, the CanSat will have a GeigerCounter onboard to measure the radiation during
                 it's descent. This information will be sent down to the ground station and put into a graph. The
-                measurements we get will be usefull to see if a planet is habitable or not.
+                measurements we get will be useful to see if a planet is habitable or not.
               </p>
             </div>
           </div>
