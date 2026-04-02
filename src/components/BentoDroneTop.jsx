@@ -1,11 +1,25 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAtom, faSatellite } from '@fortawesome/free-solid-svg-icons';
+import { faAtom, faSatellite, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 export default function BentoGeiger() {
   return (
     <div className="bg-gray-900 py-16 pt-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        {/* ✅ Mission Success Banner */}
+        <div className="mb-12 flex items-center gap-4 rounded-xl bg-amber-300/10 p-6 ring-1 ring-amber-500/20 backdrop-blur-sm">
+          <FontAwesomeIcon icon={faXmark} className="h-10 w-10 text-amber-400" />
+          <div>
+            <h3 className="text-xl font-semibold text-amber-400">Mission Unsuccessful</h3>
+            <p className="text-gray-300 mt-1">
+              The Drone CanSat mission was not completed successfully. On the launch day, several issues occured,
+              including complications with the GeoZone due to the lack of confirmed coordinates from ESERO.
+              Additionally, the drone entered a sleep mode to conserve battery, relying on a launch detection system to
+              reactivate. Unfortunately, this system did not trigger as expected. As a result of these problems, no data
+              was collected.
+            </p>
+          </div>
+        </div>
         {/* Header */}
         <h2 className="text-4xl font-semibold text-indigo-400">Team Drone</h2>
 
