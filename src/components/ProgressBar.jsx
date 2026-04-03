@@ -7,6 +7,9 @@ const product = {
 const steps = ['Proposal', 'Progress Report', 'Final Report', 'Final Paper', 'Final at Space Expo'];
 
 export default function ProgressBar() {
+  const completedSteps = steps.slice(0, product.step + 1);
+  const remainingSteps = steps.slice(product.step + 1);
+
   return (
     <div className="w-full py-8 bg-transparent">
       {/* Title */}
@@ -24,20 +27,21 @@ export default function ProgressBar() {
         </div>
       </div>
 
-      {/* Steps (scrollable on mobile) */}
-      <div className="mt-6 overflow-x-auto px-2">
-        <div className="flex min-w-max justify-between gap-6 sm:grid sm:grid-cols-5 sm:gap-0">
-          {steps.map((stepName, index) => (
-            <div
-              key={index}
-              className={`text-center text-sm font-medium whitespace-nowrap ${
-                index <= product.step ? 'text-indigo-400' : 'text-gray-500'
-              }`}
-            >
-              {stepName}
-            </div>
-          ))}
-        </div>
+      {/* Steps */}
+      <div className="mt-6 px-2 grid grid-cols-2 sm:grid-cols-5 gap-3 text-center">
+        {/* Completed steps (left first visually) */}
+        {completedSteps.map((stepName, index) => (
+          <div key={`completed-${index}`} className="text-sm font-medium text-indigo-400">
+            {stepName}
+          </div>
+        ))}
+
+        {/* Remaining steps */}
+        {remainingSteps.map((stepName, index) => (
+          <div key={`remaining-${index}`} className="text-sm font-medium text-gray-500">
+            {stepName}
+          </div>
+        ))}
       </div>
     </div>
   );
