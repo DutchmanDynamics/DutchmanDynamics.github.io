@@ -28,11 +28,16 @@ export default function HeaderWithCardsGeneral() {
             missions in general.
           </p>
         </div>
+
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:gap-8">
           {cards.map((card) => (
             <div
               key={card.name}
-              className="flex gap-x-4 rounded-xl bg-white/5 p-6 inset-ring inset-ring-white/5 backdrop-blur-sm"
+              className="flex gap-x-4 rounded-xl bg-white/5 p-6 inset-ring inset-ring-white/5 backdrop-blur-sm
+                         shadow-lg transition duration-300 transform
+                         hover:-translate-y-2
+                         hover:shadow-2xl
+                         hover:shadow-indigo-500/20"
             >
               <FontAwesomeIcon
                 icon={card.icon}

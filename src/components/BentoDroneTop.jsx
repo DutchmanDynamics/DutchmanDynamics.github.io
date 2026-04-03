@@ -9,13 +9,14 @@ export default function BentoGeiger() {
         <div className="mb-12 flex items-center gap-4 rounded-xl bg-amber-300/10 p-6 ring-1 ring-amber-500/20 backdrop-blur-sm">
           <FontAwesomeIcon icon={faXmark} className="h-10 w-10 text-amber-400" />
           <div>
-            <h3 className="text-xl font-semibold text-amber-400">Mission Unsuccessful</h3>
+            <h3 className="text-xl font-semibold text-amber-400">Partial Success</h3>
             <p className="text-gray-300 mt-1">
-              The Drone CanSat mission was not completed successfully. On the launch day, several issues occured,
-              including complications with the GeoZone due to the lack of confirmed coordinates from ESERO.
-              Additionally, the drone entered a sleep mode to conserve battery, relying on a launch detection system to
-              reactivate. Unfortunately, this system did not trigger as expected. As a result of these problems, no data
-              was collected.
+              The DroneSat mission achieved partial success. The design, tests, calibration, drone flight, and
+              communication were successful; the team was able to qualify for a launch. However, on the launch day,
+              there were some issues with the GeoZone. The GeoZone was set in the correct place, but the CanSat powered
+              on in the wrong spot. Due to safety reasons, we could not get close enough to the launch zone where our
+              GeoZone was located, and the inability to detect the launch led to a failure to wake up the drone and
+              collect data.
             </p>
           </div>
         </div>

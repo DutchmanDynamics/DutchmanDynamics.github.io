@@ -4,7 +4,7 @@ const product = {
   step: 2,
 };
 
-const steps = ['Proposal', 'Progress Report', 'Final Report', 'Final Paper', 'Space Expo'];
+const steps = ['Proposal', 'Progress Report', 'Final Report', 'Final Paper', 'Final at Space Expo'];
 
 export default function ProgressBar() {
   return (

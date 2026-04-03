@@ -50,7 +50,6 @@ export default function HeroSection() {
                   {item.name}
                 </Link>
 
-                {/* Resources after DroneSat */}
                 {item.name === 'DroneSat' && (
                   <Menu as="div" className="relative inline-block text-left">
                     <MenuButton className="inline-flex items-center gap-x-1 text-sm font-semibold text-white hover:text-indigo-500">
@@ -89,7 +88,7 @@ export default function HeroSection() {
           </div>
         </nav>
 
-        {/* Mobile Menu (unchanged) */}
+        {/* Mobile Menu */}
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
@@ -112,12 +111,7 @@ export default function HeroSection() {
 
             <div className="mt-6">
               <p className="text-gray-400">Resources</p>
-              <Link to="/geigersat_stl" className="block text-white">
-                GeigerSat STL
-              </Link>
-              <Link to="/geigersat_code" className="block text-white">
-                GeigerSat Code
-              </Link>
+
               <Link to="/dronesat_stl" className="block text-white">
                 DroneSat STL
               </Link>
@@ -129,7 +123,7 @@ export default function HeroSection() {
         </Dialog>
       </header>
 
-      {/* HERO CONTENT — EXACTLY YOUR ORIGINAL */}
+      {/* HERO CONTENT */}
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           aria-hidden="true"
@@ -146,14 +140,14 @@ export default function HeroSection() {
 
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
+            <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20 transition">
               <FontAwesomeIcon className="h-32 w-32 pt-1 text-white" icon={faUserAstronaut} />
               CanSat Competition 25/26.{' '}
               <a
                 href="https://esero.nl/project/cansat-competitie/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold text-indigo-400"
+                className="font-semibold text-indigo-400 transition duration-200 hover:text-indigo-300 hover:underline hover:translate-x-1 inline-block"
               >
                 Read more →
               </a>
@@ -172,7 +166,12 @@ export default function HeroSection() {
             </p>
 
             <div className="mt-10 flex justify-center">
-              <a href="https://kajmunk.nl/" target="_blank" rel="noopener noreferrer" className="text-white">
+              <a
+                href="https://kajmunk.nl/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white transition duration-200 hover:text-indigo-400 hover:underline hover:translate-x-1 inline-block"
+              >
                 Read more about our school →
               </a>
             </div>
