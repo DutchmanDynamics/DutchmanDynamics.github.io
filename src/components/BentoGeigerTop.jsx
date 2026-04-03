@@ -1,26 +1,24 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAtom, faRadiation, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { faAtom, faRadiation, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
 export default function BentoGeiger() {
   return (
     <div className="bg-gray-900 py-16 pt-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        {/* ✅ Mission Success Banner */}
         <div className="mb-12 flex items-center gap-4 rounded-xl bg-green-500/10 p-6 ring-1 ring-green-500/20 backdrop-blur-sm">
-          <FontAwesomeIcon icon={faCheckCircle} className="h-10 w-10 text-green-400" />
+          <FontAwesomeIcon icon={faCircleCheck} className="h-10 w-10 text-green-400" />
           <div>
             <h3 className="text-xl font-semibold text-green-400">Mission Accomplished</h3>
             <p className="text-gray-300 mt-1">
               The Geiger CanSat mission was completed successfully. All systems functioned as expected and valuable
-              radiation data was collected during descent.
+              radiation data was collected during descent. Team Geiger
             </p>
           </div>
         </div>
 
         {/* Header */}
         <h2 className="text-4xl font-semibold text-indigo-400">Team Geiger</h2>
-
         <p className="mt-2 max-w-2xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
           Building a satellite to measure radiation.
         </p>
@@ -28,13 +26,15 @@ export default function BentoGeiger() {
         {/* Grid */}
         <div className="text-indigo-400 mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2">
           {/* Primary Mission */}
-          <div className="flex gap-x-4 rounded-xl bg-white/5 p-6 inset-ring inset-ring-white/5 backdrop-blur-sm">
-            <FontAwesomeIcon aria-hidden="true" className="h-32 w-32 pt-1 flex-none text-indigo-400" icon={faAtom} />
+          <div className="flex gap-x-4 rounded-xl bg-white/5 p-6 inset-ring inset-ring-white/5 backdrop-blur-sm ring-1 ring-white/10 shadow-lg transition duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/20">
+            <FontAwesomeIcon
+              aria-hidden="true"
+              className="h-32 w-32 pt-1 flex-none text-indigo-400 text-2xl"
+              icon={faAtom}
+            />
             <div className="text-base/7">
               <p className="text-2xl font-semibold text-white">Primary Mission</p>
-
               <h3 className="mt-2 text-lg font-semibold text-indigo-400">Objectives</h3>
-
               <p className="mt-4 text-gray-400 leading-relaxed">
                 Step one of the Primary Mission is to build the shell of the CanSat which will contain all its
                 components. The CanSat will have a temperature and air pressure sensor onboard. Pressure and temperature
@@ -45,17 +45,15 @@ export default function BentoGeiger() {
           </div>
 
           {/* Secondary Mission */}
-          <div className="flex gap-x-4 rounded-xl bg-white/5 p-6 inset-ring inset-ring-white/5 backdrop-blur-sm">
+          <div className="flex gap-x-4 rounded-xl bg-white/5 p-6 inset-ring inset-ring-white/5 backdrop-blur-sm ring-1 ring-white/10 shadow-lg transition duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/20">
             <FontAwesomeIcon
               aria-hidden="true"
-              className="h-32 w-32 pt-1 flex-none text-indigo-400"
+              className="h-32 w-32 pt-1 flex-none text-indigo-400 text-2xl"
               icon={faRadiation}
             />
             <div className="text-base/7">
               <p className="text-2xl font-semibold text-white">Secondary Mission: Measuring Radiation</p>
-
               <h3 className="mt-2 text-lg font-semibold text-indigo-400">Objectives</h3>
-
               <p className="mt-4 text-gray-400 leading-relaxed">
                 For the Secondary Mission, the CanSat will have a GeigerCounter onboard to measure the radiation during
                 it's descent. This information will be sent down to the ground station and put into a graph. The

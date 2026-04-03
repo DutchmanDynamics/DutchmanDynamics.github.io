@@ -14,7 +14,6 @@ export default function HeroSection() {
           {/* Logo */}
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
               <StaticImage
                 placeholder="none"
                 layout="fixed"
@@ -55,25 +54,6 @@ export default function HeroSection() {
                 <div className="py-1">
                   <MenuItem>
                     {({ active }) => (
-                      <Link to="/geigersat_stl" className={`block px-4 py-2 text-white ${active ? 'bg-gray-700' : ''}`}>
-                        GeigerSat STL
-                      </Link>
-                    )}
-                  </MenuItem>
-
-                  <MenuItem>
-                    {({ active }) => (
-                      <Link
-                        to="/geigersat_code"
-                        className={`block px-4 py-2 text-white ${active ? 'bg-gray-700' : ''}`}
-                      >
-                        GeigerSat Code
-                      </Link>
-                    )}
-                  </MenuItem>
-
-                  <MenuItem>
-                    {({ active }) => (
                       <Link to="/dronesat_stl" className={`block px-4 py-2 text-white ${active ? 'bg-gray-700' : ''}`}>
                         DroneSat STL
                       </Link>
@@ -104,7 +84,7 @@ export default function HeroSection() {
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
           <div className="fixed inset-0 z-50" />
 
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm">
+          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full bg-gray-900 p-6 sm:max-w-sm">
             <div className="flex items-center justify-between">
               <StaticImage src="../images/cansat-logo.png" alt="logo" height={65} />
               <button onClick={() => setMobileMenuOpen(false)}>
@@ -112,7 +92,7 @@ export default function HeroSection() {
               </button>
             </div>
 
-            <div className="mt-6 space-y-2">
+            <div className="mt-6 space-y-4">
               <Link to="/" className="block text-white">
                 Home
               </Link>
@@ -128,22 +108,18 @@ export default function HeroSection() {
               <Link to="/contact" className="block text-white">
                 Contact
               </Link>
-            </div>
 
-            <div className="mt-6">
-              <p className="text-gray-400">Resources</p>
-              <Link to="/geigersat_stl" className="block text-white">
-                GeigerSat STL
-              </Link>
-              <Link to="/geigersat_code" className="block text-white">
-                GeigerSat Code
-              </Link>
-              <Link to="/dronesat_stl" className="block text-white">
-                DroneSat STL
-              </Link>
-              <Link to="/dronesat_code" className="block text-white">
-                DroneSat Code
-              </Link>
+              {/* Resources */}
+              <div className="pt-4 border-t border-gray-700">
+                <p className="text-gray-400 mb-2">Resources</p>
+
+                <Link to="/dronesat_stl" className="block text-white">
+                  DroneSat STL
+                </Link>
+                <Link to="/dronesat_code" className="block text-white">
+                  DroneSat Code
+                </Link>
+              </div>
             </div>
           </DialogPanel>
         </Dialog>

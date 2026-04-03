@@ -63,26 +63,6 @@ export default function HeroSection() {
                         <MenuItem>
                           {({ active }) => (
                             <Link
-                              to="/geigersat_stl"
-                              className={`block px-4 py-2 text-white ${active ? 'bg-gray-700' : ''}`}
-                            >
-                              GeigerSat STL
-                            </Link>
-                          )}
-                        </MenuItem>
-                        <MenuItem>
-                          {({ active }) => (
-                            <Link
-                              to="/geigersat_code"
-                              className={`block px-4 py-2 text-white ${active ? 'bg-gray-700' : ''}`}
-                            >
-                              GeigerSat Code
-                            </Link>
-                          )}
-                        </MenuItem>
-                        <MenuItem>
-                          {({ active }) => (
-                            <Link
                               to="/dronesat_stl"
                               className={`block px-4 py-2 text-white ${active ? 'bg-gray-700' : ''}`}
                             >
