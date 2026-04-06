@@ -17,7 +17,7 @@ const sections = [
     description: 'Download the full Fusion 360 project file to view or modify the design.',
     features: ['Editable design', 'All components included', 'Ready for modification'],
     buttonText: 'Download .F3D',
-    href: '/files/dronesat/dronesat.f3d',
+    href: '/CanSat%20Whole.f3d',
     imageType: 'fusion',
   },
   {
@@ -108,7 +108,7 @@ export default function DroneSatStl2() {
                     </summary>
 
                     <div className="mt-4 space-y-2 bg-gray-900 rounded-lg p-4">
-                      <a href="/files/dronesat/frame.stl" download className="block text-indigo-400 hover:underline">
+                      <a href="/CanSat Whole.f3d" download className="block text-indigo-400 hover:underline">
                         Lock
                       </a>
                       <a href="/files/dronesat/cover.stl" download className="block text-indigo-400 hover:underline">

@@ -12,7 +12,7 @@ export default function HeroSection() {
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8">
           {/* Logo */}
-          <div className="flex lg:flex-1">
+          <div className="flex items-center justify-between">
             <Link to="/" className="-m-1.5 p-1.5">
               <StaticImage
                 placeholder="none"
@@ -86,7 +86,15 @@ export default function HeroSection() {
 
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full bg-gray-900 p-6 sm:max-w-sm">
             <div className="flex items-center justify-between">
-              <StaticImage src="../images/cansat-logo.png" alt="logo" height={65} />
+              <Link to="/" className="-m-1.5 p-1.5">
+                <StaticImage
+                  placeholder="none"
+                  layout="fixed"
+                  src="../images/cansat-logo.png"
+                  alt="CanSat Logo"
+                  height={120}
+                />
+              </Link>
               <button onClick={() => setMobileMenuOpen(false)}>
                 <XMarkIcon className="h-6 w-6 text-white" />
               </button>

@@ -6,7 +6,7 @@ export default function BentoGeiger() {
   return (
     <div className="bg-gray-900 py-16 pt-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mb-12 flex items-center gap-4 rounded-xl bg-amber-300/10 p-6 ring-1 ring-amber-500/20 backdrop-blur-sm">
+        <div className="mb-12 flex items-center gap-4 rounded-xl bg-amber-500/10 p-6 ring-1 ring-amber-500/20 backdrop-blur-sm">
           <FontAwesomeIcon icon={faXmark} className="h-10 w-10 text-amber-400" />
           <div>
             <h3 className="text-xl font-semibold text-amber-400">Partial Success</h3>

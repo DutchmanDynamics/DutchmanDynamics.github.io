@@ -94,7 +94,13 @@ export default function HeroSection() {
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
             <div className="flex items-center justify-between">
               <Link to="/" className="-m-1.5 p-1.5">
-                <StaticImage src="../images/cansat-logo.png" alt="logo" height={120} />
+                <StaticImage
+                  placeholder="none"
+                  layout="fixed"
+                  src="../images/cansat-logo.png"
+                  alt="CanSat Logo"
+                  height={120}
+                />
               </Link>
               <button onClick={() => setMobileMenuOpen(false)}>
                 <XMarkIcon className="h-6 w-6 text-white" />
@@ -139,7 +145,7 @@ export default function HeroSection() {
         </div>
 
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+          <div className="mb-8 flex justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20 transition">
               <FontAwesomeIcon className="h-32 w-32 pt-1 text-white" icon={faUserAstronaut} />
               CanSat Competition 25/26.{' '}

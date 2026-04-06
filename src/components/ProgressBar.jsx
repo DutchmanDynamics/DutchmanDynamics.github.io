@@ -13,7 +13,7 @@ export default function ProgressBar() {
   return (
     <div className="w-full py-8 bg-transparent">
       {/* Title */}
-      <p className="text-lg sm:text-xl font-semibold text-white text-center">Project Milestones</p>
+      <p className="text-lg sm:text-xl sm: font-semibold text-white text-center">Project Milestones</p>
 
       {/* Progress bar */}
       <div className="mt-8 px-4 sm:px-6">
@@ -28,17 +28,23 @@ export default function ProgressBar() {
       </div>
 
       {/* Steps */}
-      <div className="mt-6 px-2 grid grid-cols-2 sm:grid-cols-5 gap-3 text-center">
+      <div className="mt-6 px-2 grid sm:grid-cols-5 gap-3 text-center">
         {/* Completed steps (left first visually) */}
         {completedSteps.map((stepName, index) => (
-          <div key={`completed-${index}`} className="text-sm font-medium text-indigo-400">
+          <div key={`completed-${index}`} className="hidden sm:inline text-sm font-medium text-indigo-400">
             {stepName}
           </div>
         ))}
 
+        {
+          <div key={`completed`} className="sm:hidden inline text-sm font-medium text-indigo-400">
+            {completedSteps.at(-1)}
+          </div>
+        }
+
         {/* Remaining steps */}
         {remainingSteps.map((stepName, index) => (
-          <div key={`remaining-${index}`} className="text-sm font-medium text-gray-500">
+          <div key={`remaining-${index}`} className="hidden sm:inline text-sm font-medium text-gray-500 ">
             {stepName}
           </div>
         ))}
