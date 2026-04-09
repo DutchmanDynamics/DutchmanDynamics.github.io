@@ -108,28 +108,20 @@ export default function DroneSatStl2() {
                     </summary>
 
                     <div className="mt-4 space-y-2 bg-gray-900 rounded-lg p-4">
-                      <a href="/CanSat Whole.f3d" download className="block text-indigo-400 hover:underline">
+                      <a href="/Lock.step" download className="block text-indigo-400 hover:underline">
                         Lock
                       </a>
-                      <a href="/files/dronesat/cover.stl" download className="block text-indigo-400 hover:underline">
-                        Top Part
+                      <a href="/BaseTop.step" download className="block text-indigo-400 hover:underline">
+                        Base Top
                       </a>
-                      <a href="/files/dronesat/mount.stl" download className="block text-indigo-400 hover:underline">
+                      <a href="/Pin.step" download className="block text-indigo-400 hover:underline">
                         Pin
                       </a>
-                      <a
-                        href="/files/dronesat/parachute.stl"
-                        download
-                        className="block text-indigo-400 hover:underline"
-                      >
+                      <a href="/Arm.step" download className="block text-indigo-400 hover:underline">
                         Arm
                       </a>
-                      <a
-                        href="/files/dronesat/electronics.stl"
-                        download
-                        className="block text-indigo-400 hover:underline"
-                      >
-                        Bottom Part
+                      <a href="/BaseBottom.step" download className="block text-indigo-400 hover:underline">
+                        Base Bottom
                       </a>
                     </div>
                   </details>

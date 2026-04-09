@@ -46,8 +46,8 @@ export default function Contact() {
             </div>
             <h2 className="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">Get in touch</h2>
             <p className="mt-6 text-lg/8 text-gray-400">
-              Any questions? Thinking about sponsoring? Or just here to say hi? Send us a message through the form on
-              the right.
+              Any questions? Wanting to continue our work? Or just here to say hi? Send us a message by clicking on the
+              Contact Button on the right.
             </p>
             <dl className="mt-10 space-y-4 text-base/7 text-gray-300">
               <div className="flex gap-x-4">
@@ -68,7 +68,7 @@ export default function Contact() {
                 </dt>
                 <dd>
                   <a href="tel:+1 (555) 234-5678" className="hover:text-white">
-                    *...........*
+                    +31 6 ********
                   </a>
                 </dd>
               </div>

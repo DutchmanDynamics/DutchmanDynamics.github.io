@@ -1,7 +1,7 @@
 import React from 'react';
 
 const product = {
-  step: 2,
+  step: 3, //Change this for new progress 3=Final Paper 4=Final at Space Expo
 };
 
 const steps = ['Proposal', 'Progress Report', 'Final Report', 'Final Paper', 'Final at Space Expo'];
