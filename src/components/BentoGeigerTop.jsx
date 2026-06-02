@@ -62,6 +62,15 @@ export default function BentoGeiger() {
 
             <div>
               <p className="text-2xl font-semibold text-white">Primary Mission</p>
+
+              <h3 className="mt-2 text-lg font-semibold text-indigo-400">Objectives</h3>
+
+              <p className="mt-4 text-gray-400 leading-relaxed">
+                Step one of the Primary Mission is to build the shell of the CanSat which will contain all its
+                components. The CanSat will have a temperature and air pressure sensor onboard. Pressure and temperature
+                shall be measured at least at 1Hz. The measurements will be transmitted to a ground station. At the
+                ground station the data will be converted into graphs.
+              </p>
             </div>
           </div>
 
@@ -70,7 +79,15 @@ export default function BentoGeiger() {
             <FontAwesomeIcon className="h-32 w-32 pt-1 flex-none text-indigo-400" icon={faRadiation} />
 
             <div>
-              <p className="text-2xl font-semibold text-white">Radiation Mission</p>
+              <p className="text-2xl font-semibold text-white">Secondary Mission: Measuring Radiation</p>
+
+              <h3 className="mt-2 text-lg font-semibold text-indigo-400">Objectives</h3>
+
+              <p className="mt-4 text-gray-400 leading-relaxed">
+                For the Secondary Mission, the CanSat will have a GeigerCounter onboard to measure the radiation during
+                its descent. This information will be sent down to the ground station and put into a graph. The
+                measurements we get will be useful to see if a planet is habitable or not.
+              </p>
             </div>
           </div>
         </div>
