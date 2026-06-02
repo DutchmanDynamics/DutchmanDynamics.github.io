@@ -1,23 +1,20 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
-
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
+  pathPrefix: '/DutchmanDynamics.github.io', // 👈 IMPORTANT (must match repo name)
+
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Dutchman Dynamics`,
+    description: `CanSat and UAV engineering team projects.`,
+    author: `DutchmanDynamics`,
+    siteUrl: `https://dutchmandynamics.github.io/`,
   },
+
   plugins: [
-    'gatsby-plugin-fontawesome-css',
     'gatsby-plugin-postcss',
+
     `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,20 +22,16 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Dutchman Dynamics`,
+        short_name: `DDynamics`,
         start_url: `/`,
-        background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        background_color: `#111827`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/gatsby-logo.png`,
       },
     },
   ],
