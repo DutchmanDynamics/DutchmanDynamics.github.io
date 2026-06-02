@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcansat_website=self.webpackChunkcansat_website||[]).push([[503],{5221:function(e,t,n){n.r(t),n.d(t,{Head:function(){return c}});var a=n(6540),l=n(4087);const c=()=>a.createElement("title",null,"Testing");t.default=()=>a.createElement("main",null,a.createElement(l.A,null))}}]);
-//# sourceMappingURL=component---src-pages-testing-jsx-06b60ee406d004558556.js.map
