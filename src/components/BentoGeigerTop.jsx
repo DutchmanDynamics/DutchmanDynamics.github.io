@@ -1,12 +1,41 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Confetti from 'react-confetti';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAtom, faRadiation, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
 export default function BentoGeiger() {
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <div className="bg-gray-900 py-16 pt-40">
+    <div className="relative bg-gray-900 py-16 pt-40 overflow-hidden">
+      {/* 🎉 Confetti */}
+      <Confetti width={windowSize.width} height={windowSize.height} numberOfPieces={200} recycle={false} />
+
+      {/* 🏆 TOP BANNER */}
+      <div className="bg-indigo-600/10 border-b border-indigo-500/20">
+        <div className="mx-auto max-w-7xl px-6 py-6 text-center">
+          <p className="text-indigo-300 font-semibold text-lg">🥈 Geiger CanSat earned 2nd place in the competition!</p>
+        </div>
+      </div>
+
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mb-12 flex items-center gap-4 rounded-xl bg-green-500/10 p-6 ring-1 ring-green-500/20 backdrop-blur-sm">
+        {/* ✅ Mission Accomplished */}
+        <div className="mb-12 flex items-center gap-4 rounded-xl bg-green-500/10 p-6 ring-1 ring-green-500/20 backdrop-blur-sm mt-10">
           <FontAwesomeIcon icon={faCircleCheck} className="h-10 w-10 text-green-400" />
           <div>
             <h3 className="text-xl font-semibold text-green-400">Mission Accomplished</h3>
@@ -26,7 +55,7 @@ export default function BentoGeiger() {
         {/* Grid */}
         <div className="text-indigo-400 mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2">
           {/* Primary Mission */}
-          <div className="flex gap-x-4 rounded-xl bg-white/5 p-6 inset-ring inset-ring-white/5 backdrop-blur-sm ring-1 ring-white/10 shadow-lg transition duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/20">
+          <div className="flex gap-x-4 rounded-xl bg-white/5 p-6 backdrop-blur-sm ring-1 ring-white/10 shadow-lg transition duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/20">
             <FontAwesomeIcon
               aria-hidden="true"
               className="h-32 w-32 pt-1 flex-none text-indigo-400 text-2xl"
@@ -45,7 +74,7 @@ export default function BentoGeiger() {
           </div>
 
           {/* Secondary Mission */}
-          <div className="flex gap-x-4 rounded-xl bg-white/5 p-6 inset-ring inset-ring-white/5 backdrop-blur-sm ring-1 ring-white/10 shadow-lg transition duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/20">
+          <div className="flex gap-x-4 rounded-xl bg-white/5 p-6 backdrop-blur-sm ring-1 ring-white/10 shadow-lg transition duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/20">
             <FontAwesomeIcon
               aria-hidden="true"
               className="h-32 w-32 pt-1 flex-none text-indigo-400 text-2xl"
@@ -56,7 +85,7 @@ export default function BentoGeiger() {
               <h3 className="mt-2 text-lg font-semibold text-indigo-400">Objectives</h3>
               <p className="mt-4 text-gray-400 leading-relaxed">
                 For the Secondary Mission, the CanSat will have a GeigerCounter onboard to measure the radiation during
-                it's descent. This information will be sent down to the ground station and put into a graph. The
+                its descent. This information will be sent down to the ground station and put into a graph. The
                 measurements we get will be useful to see if a planet is habitable or not.
               </p>
             </div>
